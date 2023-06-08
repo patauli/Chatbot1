@@ -25,7 +25,30 @@ class Chatbot:
     self.text=Text(main_frame,width=65,height=20,bd=20,relief=RAISED,font=('arial',14),yscrollcommand=self.scroll_y.set)
     self.scroll_y.pack(side=RIGHT,fill=Y) 
     self.text.pack()
-    
+
+
+    btn_frame=Frame(self.root,bd=4,bg='white',width=730)
+    btn_frame.pack
+
+    label=Label(btn_frame,text="type Something",font=('arial',14,'bold'),fg='green',bg='white')
+    label_1.grid(row=0,column=0,padx=5,sticky=W)
+
+
+    self.entry=ttk.Entry(btn_frame,width=40,font=('times new roman',16,'bold'))
+    self.entry.grid(row=0,column=1,padx=5,sticky=W)
+
+    self.send=Button(btn_frame,text="Send>>",font=('arial',15,'bold'),width=8,bg='green')
+    self.send.grid(row=0,column=2,padx=5,sticky=W)
+
+    self.clare=Button(btn_frame,text="Clear Data",font=('arial',15,'bold'),width=8,bg='red',fg='white')
+    self.clare.grid(row=1,column=0,padx=5,sticky=W)
+
+
+
+    #. <<<<<<<<<<<<<<<<<<<<<<<<<<<Function Declaration>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    def send 
+
 
 
     
