@@ -17,10 +17,17 @@ class Chatbot:
     img_chat=img_chat.resize((200,70),Image.ANTIALIAS)
     self.photoimg=ImageTk.PhotoImage(img_chat)
     
-    Title_label=Label(main_frame,bd=3,relief=RAISED,anchor='nw',width=730,image=self.photoimg,text='CHAT ME',font=(arial',30,'bold'),fg='green',bg='white')
+    Title_label=Label(main_frame,bd=3,relief=RAISED,anchor='nw',width=730,image=self.photoimg,text='CHAT ME',font=('arial',30,'bold'),fg='green',bg='white')
     Title_label.pack(side=TOP)
 
+
+    self.scroll_y=ttk.Scrollbar(main_frame,orient=VERTICAL)
+    self.text=Text(main_frame,width=65,height=20,bd=20,relief=RAISED,font=('arial',14),yscrollcommand=self.scroll_y.set)
+    self.scroll_y.pack(side=RIGHT,fill=Y) 
+    self.text.pack()
     
+
+
     
     
     if __name__ == '__main__':
