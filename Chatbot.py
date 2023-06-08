@@ -19,6 +19,8 @@ class Chatbot:
     
     Title_label=Label(main_frame,bd=3,relief=RAISED,anchor='nw',width=730,image=self.photoimg,text='CHAT ME',font=(arial',30,'bold'),fg='green',bg='white')
     Title_label.pack(side=TOP)
+
+    
     
     
     if __name__ == '__main__':
